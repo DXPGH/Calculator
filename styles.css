@@ -28,13 +28,34 @@ a {
   border-radius: 5px;
 }
 
-.screen {
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px;
-  font-size: 40px;
-  border-bottom: 1px solid black;
+#Display-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px, auto));
+    word-wrap: break-word;
+    padding-bottom: 20px;
+    border-bottom: 1px black solid;
+    background-color: #B5C7CC;
+    padding-right: 6px;
 }
+
+#Display-area .currentInput {
+    text-align: right;
+    height: 8vh;
+    color: black;
+    font-size: xx-large;
+    line-height: 2;
+    word-wrap: break-word;
+}
+
+#Display-area .answerScreen {
+    text-align: right;
+    height: 7px;
+    color: black;
+    font-size: larger;
+    line-height: 3;
+  }
 
 .title {
   display: flex;
@@ -55,28 +76,32 @@ a {
   grid-gap: 15px;
 }
 
-.btn {
-  background-color: #c4c4cd;
+.btn, .decimal {
+  background-color: #7DB290;
   border: 1px solid #111;
-  color: #111;
+  color: #407D6C;
   border-radius: 5px;
   font-size: 22px;
   cursor: pointer;
   padding: 12px 6px;
 }
 
-.blue-span {
-  grid-column: span 2;
-  background-color: lightskyblue;
+#clear, #erase {
+    grid-column: span 2;
 }
 
-.red-span {
-  grid-column: span 2;
-  background-color: lightcoral;
+.fun_btn {
+    border: 1px solid #111;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 12px 6px;
+    background-color: #587B89;
+    color: #244C66;
 }
 
 .buttons {
-  background-color: #dadbed;
+  background-color: #B5C7CC;
 }
 
 /* FOOTER */
@@ -89,4 +114,10 @@ a {
   background-color: grey;
   color: white;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: flex-start;
+    }
 }

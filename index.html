@@ -15,34 +15,38 @@
   <body>
     <h1 class="title">Calculator</h1>
     <div class="container">
-        <div class="screen-wrapper">
-            <div class="screen">0</div>
-        </div>
+      <div id="Display-area">
+        <div class="currentInput">0</div>
+        <div class="answerScreen"></div>
+      </div>
       <div class="buttons">
         <div class="numbers-operators">
-          <button class="btn red-span">C</button>
-          <button class="btn blue-span">D</button>
-          <button class="btn">7</button>
-          <button class="btn">8</button>
-          <button class="btn">9</button>
-          <button class="btn">&divide</button>
-          <button class="btn">4</button>
-          <button class="btn">5</button>
-          <button class="btn">6</button>
-          <button class="btn">&times</button>
-          <button class="btn">1</button>
-          <button class="btn">2</button>
-          <button class="btn">3</button>
-          <button class="btn">-</button>
-          <button class="btn">.</button>
-          <button class="btn">0</button>
-          <button class="btn">=</button>
-          <button class="btn">+</button>
+          <button id="clear" class="fun_btn" value="">AC</button>
+          <button id="erase"class="fun_btn" value="">&#11013;</button>
+          <button class="btn" value="7">7</button>
+          <button class="btn" value="8">8</button>
+          <button class="btn" value="9">9</button>
+          <button class="fun_btn operator" value="/">&divide</button>
+          <button class="btn" value="4">4</button>
+          <button class="btn" value="5">5</button>
+          <button class="btn" value="6">6</button>
+          <button class="fun_btn operator" value="*">&times</button>
+          <button class="btn" value="1">1</button>
+          <button class="btn" value="2">2</button>
+          <button class="btn" value="3">3</button>
+          <button class="fun_btn operator" value="-">-</button>
+          <button class="decimal" value=".">.</button>
+          <button class="btn" value="0">0</button>
+          <button id="evaluate" class="fun_btn" value="=">=</button>
+          <button class="fun_btn operator" value="+">+</button>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <p>Copyright © <a href="https://github.com/DXPGH" target="_blank">DXPGH</a></p>
+      <p>
+        Copyright © 2022
+        <a href="https://github.com/DXPGH" target="_blank">DXPGH</a>
+      </p>
     </footer>
   </body>
 </html>
